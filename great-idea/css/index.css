@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+/* #region */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,4 +65,40 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/*#endregion */
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.main-container{
+	width: 876px;
+	margin: 0 auto;
+}
+
+.header-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 2% 0;
+
+	background-color: darksalmon;
+}
+
+.nav-boi {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.header-container nav a {
+	width: 100px;
+	text-decoration: none;
+	color: darkgray;
+	
+}
+
+section.innov{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
