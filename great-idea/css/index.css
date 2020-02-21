@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5 {
 .main-container{
 	width: 876px;
 	margin: 0 auto;
+	
 }
 
 .header-container{
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 	padding: 2% 0;
 
-	background-color: darksalmon;
+	background-color: white;
 }
 
 .nav-boi {
@@ -98,7 +99,195 @@ h1, h2, h3, h4, h5 {
 
 section.innov{
 	display: flex;
+	padding: 5% 0;
 	justify-content: space-around;
 	align-items: center;
+	border-bottom: 1px solid black;
+}
+
+section.innov h1{
+	font-size: 72px;
+	text-align: center;
+}
+
+.inPar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inPar a {
+	text-decoration: none;
+	color: darkgray;
+	text-align: center;
+	padding: 5px 40px;
+	border: 1px solid black;
+}
+
+.features{
+	display: flex;
+	padding: 3% 0;
+	line-height: 20px;
+}
+
+.center-image{
+	display: flex;
+	padding: 2% 0;
+}
+
+.bottom-info{
+	display: flex;
+	padding: 3% 0;
+	border-bottom: 1px solid black;
+	line-height: 20px;
+}
+
+.bottom-info div{
+	width: 33%;
+}
+
+footer{
+	display: flex;
+	padding-top: 3%;
+	flex-direction: column;
+}
+
+.copy{
+	align-items: center;
+	text-align: center;
+	padding: 4% 0;
+}
+
+/* second page stuff */
+.top-banner{
+	padding: 1% 0;
+}
+
+.top-info{
+	padding: 4% 0;
+	border-bottom: 1px solid black;
+	line-height: 20px;
+}
+
+.top-info h1 {
+	font-size: x-large;
+}
+
+.mid-boxes{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 3% 0;
+
+	border-bottom: 2px solid black;
+}
+
+.mid-boxes div{
+	margin: 2% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: start;
+	width: 47%;
+	border: 1px solid black;
+	padding: 2%;
+	background-color: gainsboro;
 	
+}
+
+.mid-boxes div a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 25px;
+	font-size: small;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: ghostwhite;
+}
+
+.mid-boxes p {
+	line-height: 20px;
+}
+
+.bot-info{
+	display: flex;
+	padding: 4% 0;
+}
+
+.bot-info div{
+	justify-content: space-between;
+}
+
+.bot-info p{
+	line-height: 20px;
+	padding: 0 5% 0 0;
+}
+
+.bot-info ul{
+	padding-left: 5%;
+	list-style-type: square;
+	line-height: 200%;
+}
+
+
+/* @media queries */
+/* Chrome Responsive 400x872 */
+@media only screen and (max-width: 400px) {
+	.main-container{
+		font-size: 15px;
+		width: auto;
+		padding: 0 3%;
+	}
+
+	.header-container{
+		width: auto;
+	}
+
+	img{
+		width: 90%;
+	}
+
+	.mid-boxes{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: start;
+	width: auto;
+	}
+
+	.mid-boxes div{
+		margin: 2% 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: start;
+		width: auto;
+		border: 1px solid black;
+		padding: 2%;
+		background-color: gainsboro;
+	}
+
+	.bot-info{
+		display: flex;
+		padding: 4% 0;
+	}
+
+	.bot-info div {
+		width: auto;
+	}
+
+
+	.nav-boi {
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+	
+	.header-container nav a {
+		width: auto;
+		text-decoration: none;
+		color: darkgray;
+		padding: 3% 0;
+	}
+
 }
